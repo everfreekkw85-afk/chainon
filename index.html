@@ -297,18 +297,18 @@ footer p{font-size:.8rem;color:rgba(255,255,255,.35)}
       </div>
     </div>
     <div>
-      <form class="contact-form" onsubmit="handleSubmit(event)">
+      <form class="contact-form" action="https://formspree.io/f/xykqnzyo" method="POST">
         <div class="form-group">
           <label data-ko="프로젝트명 / 담당자명" data-en="Project Name / Your Name">프로젝트명 / 담당자명</label>
-          <input type="text" data-placeholder-ko="프로젝트명과 담당자 성함을 적어주세요" data-placeholder-en="Project name and your name" placeholder="프로젝트명과 담당자 성함을 적어주세요">
+          <input type="text" name="project_name" data-placeholder-ko="프로젝트명과 담당자 성함을 적어주세요" data-placeholder-en="Project name and your name" placeholder="프로젝트명과 담당자 성함을 적어주세요">
         </div>
         <div class="form-group">
           <label data-ko="연락처 (텔레그램 또는 이메일)" data-en="Contact (Telegram or Email)">연락처 (텔레그램 또는 이메일)</label>
-          <input type="text" data-placeholder-ko="@telegram_id 또는 이메일 주소" data-placeholder-en="@telegram_id or email address" placeholder="@telegram_id 또는 이메일 주소">
+          <input type="text" name="contact" data-placeholder-ko="@telegram_id 또는 이메일 주소" data-placeholder-en="@telegram_id or email address" placeholder="@telegram_id 또는 이메일 주소">
         </div>
         <div class="form-group">
           <label data-ko="가장 필요한 서비스는 무엇인가요?" data-en="What do you need most?">가장 필요한 서비스는 무엇인가요?</label>
-          <select>
+          <select name="service">
             <option data-ko="선택해주세요" data-en="Please select">선택해주세요</option>
             <option data-ko="커뮤니티 콘텐츠 운영" data-en="Community Content Management">커뮤니티 콘텐츠 운영</option>
             <option data-ko="소셜 채널 운영 (X, 인스타, 페이스북, 디스코드)" data-en="Social Channel Management (X, Instagram, Facebook, Discord)">소셜 채널 운영 (X, 인스타, 페이스북, 디스코드)</option>
@@ -321,7 +321,7 @@ footer p{font-size:.8rem;color:rgba(255,255,255,.35)}
         </div>
         <div class="form-group">
           <label data-ko="지금 상황을 자유롭게 적어주세요" data-en="Tell us about your current situation">지금 상황을 자유롭게 적어주세요</label>
-          <textarea data-placeholder-ko="어디서 막혔는지, 어디까지 왔는지, 무엇이 필요한지. 뭐든 좋습니다." data-placeholder-en="Where are you stuck? What have you tried? What do you need?" placeholder="어디서 막혔는지, 어디까지 왔는지, 무엇이 필요한지. 뭐든 좋습니다."></textarea>
+          <textarea name="message" data-placeholder-ko="어디서 막혔는지, 어디까지 왔는지, 무엇이 필요한지. 뭐든 좋습니다." data-placeholder-en="Where are you stuck? What have you tried? What do you need?" placeholder="어디서 막혔는지, 어디까지 왔는지, 무엇이 필요한지. 뭐든 좋습니다."></textarea>
         </div>
         <button type="submit" class="form-submit" data-ko="상담 신청하기" data-en="Submit">상담 신청하기</button>
       </form>
