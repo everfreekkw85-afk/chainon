@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChainOn | Blockchain Growth Partner</title>
-<meta name="description" content="블록체인 프로젝트의 마케팅, 커뮤니티 운영, 글로벌 리스팅 지원. ChainOn partners with your foundation.">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18305888929"></script>
 <script>
@@ -13,431 +11,557 @@
   gtag('js', new Date());
   gtag('config', 'AW-18305888929');
 </script>
+<title>ChainOn | Blockchain Growth Partner</title>
+<meta name="description" content="블록체인 프로젝트의 마케팅, SNS 채널 운영, 글로벌 KOL 네트워크, 거래소 상장 지원까지. ChainOn partners with your foundation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#fff;--bg2:#F7F8FC;--bg3:#EEF1F8;--navy:#0D1F3C;--navy2:#1A3560;--blue:#2563EB;--blue-light:#EFF4FF;--blue-mid:#BFCFFF;--text:#0D1F3C;--text2:#4A5568;--text3:#94A3B8;--border:#E2E8F0;--border2:#C7D6F5}
+:root{
+  --bg:#04091C;--bg2:#070E22;--bg3:#0A1328;
+  --card:#0D1830;--card2:#101E38;
+  --blue:#1D4ED8;--blue2:#2563EB;--blue3:#3B82F6;--blue4:#60A5FA;
+  --white:#FFF;--t1:#DCE8F8;--t2:#7A95BB;--t3:#3D5270;
+  --border:rgba(59,130,246,.1);--border2:rgba(59,130,246,.05);--rule:rgba(255,255,255,.06);
+  --max:1240px;
+}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR','Plus Jakarta Sans',sans-serif;font-weight:400;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:66px;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:-.03em;color:var(--navy);text-decoration:none;flex-shrink:0}
-.logo span{color:var(--blue)}
-.nav-links{display:flex;gap:1.75rem;list-style:none}
-.nav-links a{color:var(--text2);text-decoration:none;font-size:.85rem;font-weight:500;transition:color .2s;white-space:nowrap}
-.nav-links a:hover{color:var(--navy)}
-.nav-right{display:flex;gap:.5rem;align-items:center}
-.lang-toggle{display:flex;background:var(--bg3);border-radius:6px;padding:3px;gap:2px}
-.lang-btn{background:none;border:none;padding:.3rem .7rem;border-radius:4px;font-size:.78rem;font-weight:700;color:var(--text3);cursor:pointer;transition:all .2s;font-family:'Plus Jakarta Sans',sans-serif}
-.lang-btn.active{background:var(--blue);color:#fff}
-.nav-kakao{background:#FEE500;color:#3C1E1E;text-decoration:none;font-size:.78rem;font-weight:700;padding:.45rem 1rem;border-radius:6px;white-space:nowrap}
-.nav-cta{background:var(--blue);color:#fff;text-decoration:none;font-size:.78rem;font-weight:700;padding:.45rem 1.1rem;border-radius:6px;white-space:nowrap}
-.nav-cta:hover{background:var(--navy2)}
-.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 5vw 80px;background:linear-gradient(170deg,#F0F5FF 0%,#fff 55%);position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.06) 0%,transparent 70%);top:-100px;right:-150px;pointer-events:none}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);background:var(--blue-light);border:1px solid var(--blue-mid);padding:.4rem 1rem;border-radius:100px;margin-bottom:2rem;font-family:'Plus Jakarta Sans',sans-serif}
-.hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(2rem,5vw,3.8rem);line-height:1.15;letter-spacing:-.03em;max-width:820px;margin:0 auto 1.5rem;color:var(--navy)}
-.hero h1 .accent{color:var(--blue)}
-.hero-sub{font-size:clamp(.95rem,1.8vw,1.1rem);color:var(--text2);max-width:580px;margin:0 auto .75rem;line-height:1.8}
-.hero-proof{font-size:.875rem;color:var(--blue);margin-bottom:2.5rem;font-weight:600}
-.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.btn-primary{background:var(--blue);color:#fff;text-decoration:none;font-size:.9rem;font-weight:700;padding:.9rem 2rem;border-radius:8px;transition:background .2s,transform .15s;border:none;cursor:pointer;font-family:inherit}
-.btn-primary:hover{background:var(--navy2);transform:translateY(-1px)}
-.btn-secondary{color:var(--navy);text-decoration:none;font-size:.9rem;font-weight:500;padding:.9rem 2rem;border-radius:8px;border:1.5px solid var(--border2);transition:border-color .2s,background .2s;font-family:inherit}
-.btn-secondary:hover{border-color:var(--blue);background:var(--blue-light)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--navy)}
-.stat{padding:2.5rem 2rem;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
-.stat:last-child{border-right:none}
-.stat-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:2.2rem;font-weight:800;color:#fff;line-height:1;margin-bottom:.4rem}
-.stat-num sub{font-size:1.1rem;vertical-align:middle;color:#93BFFF}
-.stat-label{font-size:.82rem;color:rgba(255,255,255,.55)}
-section{padding:100px 5vw}
-.section-label{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);background:var(--blue-light);padding:.3rem .75rem;border-radius:4px;margin-bottom:1.25rem;font-family:'Plus Jakarta Sans',sans-serif}
-.section-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.75rem,3.2vw,2.6rem);font-weight:800;line-height:1.2;letter-spacing:-.03em;color:var(--navy);margin-bottom:1.25rem}
-.section-desc{color:var(--text2);font-size:1rem;line-height:1.8;max-width:520px}
-.why{background:var(--bg2)}
-.why-inner{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center}
-.why-cards{display:flex;flex-direction:column;gap:1rem}
-.why-card{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;transition:border-color .2s,box-shadow .2s}
-.why-card:hover{border-color:var(--blue-mid);box-shadow:0 4px 20px rgba(37,99,235,.07)}
-.why-card-icon{width:40px;height:40px;border-radius:8px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
-.why-card-body h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.35rem;line-height:1.3}
-.why-card-body p{font-size:.85rem;color:var(--text2);line-height:1.65}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:3.5rem}
-.service-item{background:var(--bg);padding:2rem 1.75rem;transition:background .2s}
-.service-item:hover{background:var(--blue-light)}
-.service-icon{width:44px;height:44px;border-radius:10px;background:var(--blue-light);border:1px solid var(--blue-mid);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;font-size:1.15rem}
-.service-item h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;line-height:1.3}
-.service-item p{font-size:.83rem;color:var(--text2);line-height:1.7}
-.pain{background:var(--navy)}
-.pain .section-label{background:rgba(37,99,235,.25);color:#93BFFF}
-.pain .section-title{color:#fff}
-.pain .section-desc{color:rgba(255,255,255,.6)}
-.pain-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3rem}
-.pain-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:1.5rem;transition:background .2s,border-color .2s}
-.pain-card:hover{background:rgba(37,99,235,.12);border-color:rgba(37,99,235,.4)}
-.pain-card p{font-size:.875rem;color:rgba(255,255,255,.75);line-height:1.7}
-.pain-card strong{color:#fff;font-weight:600;display:block;margin-bottom:.35rem;font-size:.9rem}
-.pain-cta{margin-top:2.5rem;padding:1.75rem 2rem;background:rgba(37,99,235,.18);border:1px solid rgba(37,99,235,.35);border-radius:10px;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.pain-cta p{color:#fff;font-size:.95rem;font-weight:500}
-.btn-white{background:#fff;color:var(--navy);text-decoration:none;font-size:.875rem;font-weight:700;padding:.75rem 1.5rem;border-radius:7px;transition:opacity .2s;white-space:nowrap;font-family:inherit;border:none;cursor:pointer}
-.btn-white:hover{opacity:.9}
-.btn-kakao{background:#FEE500;color:#3C1E1E;text-decoration:none;font-size:.875rem;font-weight:700;padding:.75rem 1.5rem;border-radius:7px;white-space:nowrap;font-family:inherit}
-.exchanges{background:var(--bg2)}
-.exchange-note{font-size:.78rem;color:var(--text3);margin-top:.75rem;line-height:1.6}
-.exchange-grid{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2.5rem}
-.ex-badge{border:1px solid var(--border);border-radius:6px;padding:.55rem 1rem;font-size:.82rem;font-weight:600;color:var(--text2);background:var(--bg);transition:all .2s;white-space:nowrap;font-family:'Plus Jakarta Sans',sans-serif}
-.ex-badge:hover{border-color:var(--blue-mid);color:var(--blue);background:var(--blue-light)}
-.ex-badge.tier1{border-color:var(--blue-mid);color:var(--blue);background:var(--blue-light)}
-.cta-band{background:var(--blue);padding:80px 5vw;text-align:center}
-.cta-band .section-label{background:rgba(255,255,255,.2);color:#fff}
-.cta-band h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;letter-spacing:-.02em;color:#fff;margin-bottom:.75rem}
-.cta-band p{color:rgba(255,255,255,.75);margin-bottom:2rem;font-size:.95rem}
-.process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:4rem;position:relative}
-.process-steps::before{content:'';position:absolute;top:23px;left:10%;right:10%;height:1px;background:var(--border2)}
-.process-step{text-align:center;padding:0 .75rem}
-.step-dot{width:46px;height:46px;border-radius:50%;background:var(--blue-light);border:1.5px solid var(--blue-mid);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.82rem;color:var(--blue);position:relative;z-index:1}
-.process-step h4{font-size:.85rem;font-weight:700;color:var(--navy);margin-bottom:.35rem}
-.process-step p{font-size:.77rem;color:var(--text3);line-height:1.55}
-.faq{background:var(--bg2)}
-.faq-list{max-width:680px;margin-top:3rem}
-.faq-item{border-bottom:1px solid var(--border);padding:1.5rem 0}
-.faq-q{font-weight:600;font-size:.92rem;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;user-select:none}
-.faq-q::after{content:'+';font-family:'Plus Jakarta Sans',sans-serif;font-size:1.2rem;color:var(--blue);flex-shrink:0;transition:transform .2s}
-.faq-item.open .faq-q::after{transform:rotate(45deg)}
-.faq-a{font-size:.875rem;color:var(--text2);line-height:1.75;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s}
-.faq-item.open .faq-a{max-height:220px;padding-top:.875rem}
-.contact{background:var(--bg)}
-.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:start}
-.contact-form{display:flex;flex-direction:column;gap:1rem}
-.form-group{display:flex;flex-direction:column;gap:.4rem}
-.form-group label{font-size:.8rem;color:var(--text2);font-weight:600}
-.form-group input,.form-group textarea,.form-group select{background:var(--bg2);border:1.5px solid var(--border);border-radius:8px;padding:.75rem 1rem;color:var(--navy);font-family:inherit;font-size:.875rem;transition:border-color .2s;outline:none;width:100%}
-.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--blue);background:var(--bg)}
-.form-group textarea{resize:vertical;min-height:110px}
-.form-submit{background:var(--blue);color:#fff;border:none;padding:.9rem 2rem;border-radius:8px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background .2s,transform .15s;align-self:flex-start}
-.form-submit:hover{background:var(--navy2);transform:translateY(-1px)}
-.channels{display:flex;flex-direction:column;gap:.75rem}
-.channel{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;border:1.5px solid var(--border);border-radius:10px;background:var(--bg2);text-decoration:none;color:var(--navy);transition:border-color .2s,background .2s}
-.channel:hover{border-color:var(--blue-mid);background:var(--blue-light)}
-.channel-icon{width:38px;height:38px;border-radius:8px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
-.channel-icon.kakao{background:#FEF9C3}
-.channel-text strong{display:block;font-size:.875rem;font-weight:600}
-.channel-text span{font-size:.78rem;color:var(--text3)}
-.disclaimer{background:var(--bg3);padding:1.25rem 5vw;text-align:center;border-top:1px solid var(--border)}
-.disclaimer p{font-size:.75rem;color:var(--text3);line-height:1.7;max-width:860px;margin:0 auto}
-footer{background:var(--navy);padding:2.5rem 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-footer .logo{color:#fff}
-footer .logo span{color:#93BFFF}
-footer p{font-size:.8rem;color:rgba(255,255,255,.35)}
-@media(max-width:768px){.stats{grid-template-columns:repeat(2,1fr)}.stat{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}.stat:nth-child(odd){border-right:1px solid rgba(255,255,255,.08)}.stat:nth-last-child(-n+2){border-bottom:none}.why-inner,.contact-inner{grid-template-columns:1fr}.services-grid,.pain-cards{grid-template-columns:1fr}.pain-cta{flex-direction:column;align-items:flex-start}.process-steps{grid-template-columns:1fr;gap:1.5rem}.process-steps::before{display:none}.nav-links{display:none}.nav-kakao{display:none}footer{flex-direction:column;text-align:center}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-.hero-eyebrow{animation:fadeUp .5s ease both}
-.hero h1{animation:fadeUp .5s .12s ease both}
-.hero-sub{animation:fadeUp .5s .22s ease both}
-.hero-proof{animation:fadeUp .5s .3s ease both}
-.hero-btns{animation:fadeUp .5s .38s ease both}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--t1);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 5vw}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;height:64px;transition:all .3s}
+nav.scrolled{background:rgba(4,9,28,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 5vw;height:64px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.3rem;font-weight:900;color:var(--white);letter-spacing:-.03em;text-decoration:none}
+.logo span{color:var(--blue3)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--t2);font-size:.82rem;font-weight:500;text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--white)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.lang-btn{background:none;border:1px solid var(--border);color:var(--t2);padding:.35rem .8rem;border-radius:5px;font-size:.75rem;font-weight:700;cursor:pointer;font-family:'Noto Sans KR',sans-serif;transition:all .2s;letter-spacing:.04em}
+.lang-btn.active,.lang-btn:hover{border-color:var(--blue3);color:var(--blue3)}
+.nav-cta{background:var(--blue2);color:#fff;padding:.5rem 1.3rem;border-radius:7px;font-size:.82rem;font-weight:700;text-decoration:none;transition:all .2s}
+.nav-cta:hover{background:var(--blue3)}
+@media(max-width:768px){.nav-links{display:none}}
+@media(max-width:500px){.nav-right .lang-btn{display:none}}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:64px}
+.hero-glow1{position:absolute;top:-20%;right:-5%;width:700px;height:700px;background:radial-gradient(circle,rgba(37,99,235,.13) 0%,transparent 65%);pointer-events:none}
+.hero-glow2{position:absolute;bottom:-20%;left:-5%;width:500px;height:500px;background:radial-gradient(circle,rgba(59,130,246,.07) 0%,transparent 65%);pointer-events:none}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.05) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 80% 80% at 60% 40%,black 0%,transparent 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding:80px 5vw}
+.hero-content{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:5rem;align-items:center}
+.hero-kicker{display:flex;align-items:center;gap:.7rem;margin-bottom:1.8rem}
+.kicker-bar{width:32px;height:2px;background:var(--blue3)}
+.kicker-txt{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue3)}
+.hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:900;line-height:1.12;letter-spacing:-.04em;color:var(--white);margin-bottom:1.5rem}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--blue3),var(--blue4));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-desc{font-size:1rem;color:var(--t2);line-height:1.95;margin-bottom:2.2rem;max-width:520px}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
+.btn-primary{background:var(--blue2);color:#fff;padding:.85rem 2rem;border-radius:8px;font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s}
+.btn-primary:hover{background:var(--blue3);transform:translateY(-2px)}
+.btn-secondary{background:transparent;color:var(--t1);padding:.85rem 2rem;border-radius:8px;font-size:.9rem;font-weight:600;text-decoration:none;border:1px solid var(--border);transition:all .2s}
+.btn-secondary:hover{border-color:var(--blue3);color:var(--blue4)}
+.hero-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.hstat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.4rem 1.5rem}
+.hstat-n{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.8rem;font-weight:900;color:var(--white);line-height:1;letter-spacing:-.02em}
+.hstat-n sup{font-size:1rem;color:var(--blue3)}
+.hstat-l{font-size:.74rem;color:var(--t2);margin-top:.4rem;line-height:1.5}
+@media(max-width:900px){.hero-content{grid-template-columns:1fr}.hero-stats{display:none}}
+
+/* TICKER */
+.ticker-sec{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);height:52px;overflow:hidden;display:flex;align-items:center;position:relative}
+.ticker-sec::before,.ticker-sec::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
+.ticker-sec::before{left:0;background:linear-gradient(90deg,var(--bg2),transparent)}
+.ticker-sec::after{right:0;background:linear-gradient(-90deg,var(--bg2),transparent)}
+.ticker-track{display:flex;animation:ticker 35s linear infinite;width:max-content}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.t-pill{padding:0 2rem;font-size:.71rem;font-weight:600;color:var(--t3);letter-spacing:.06em;white-space:nowrap;border-right:1px solid var(--rule);height:52px;display:flex;align-items:center}
+
+/* SECTION BASE */
+.sec{padding:88px 5vw}
+.sec-alt{background:var(--bg2)}
+.sec-border{border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.eyebrow{display:flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.eyebrow-bar{width:24px;height:2px;background:var(--blue3)}
+.eyebrow-txt{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue3)}
+.sec-h{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;color:var(--white);letter-spacing:-.03em;line-height:1.18;margin-bottom:1rem}
+.sec-d{font-size:.93rem;color:var(--t2);line-height:1.95;max-width:540px}
+.c{text-align:center}.c .sec-d{margin:0 auto}.c .eyebrow{justify-content:center}
+
+/* SERVICES 3x3 */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-top:3.5rem}
+.svc{background:var(--card);padding:2.2rem 2rem;transition:background .2s;position:relative}
+.svc:hover{background:var(--card2)}
+.svc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue2),var(--blue3));opacity:0;transition:opacity .2s}
+.svc:hover::before{opacity:1}
+.svc-ico{font-size:1.6rem;margin-bottom:1.1rem;display:block}
+.svc h3{font-size:.92rem;font-weight:700;color:var(--white);margin-bottom:.55rem;line-height:1.4}
+.svc p{font-size:.78rem;color:var(--t2);line-height:1.8}
+@media(max-width:768px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.svc-grid{grid-template-columns:1fr}}
+
+/* WHY 2-col */
+.why-wrap{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:0}
+.why-cards{display:flex;flex-direction:column;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.why-card{background:var(--card);padding:1.8rem 2rem;display:grid;grid-template-columns:44px 1fr;gap:1.2rem;align-items:start;transition:background .2s}
+.why-card:hover{background:var(--card2)}
+.why-ico{font-size:1.3rem;padding-top:.1rem}
+.why-card h4{font-size:.9rem;font-weight:700;color:var(--white);margin-bottom:.35rem}
+.why-card p{font-size:.79rem;color:var(--t2);line-height:1.75}
+@media(max-width:800px){.why-wrap{grid-template-columns:1fr;gap:2.5rem}}
+
+/* PAIN POINTS 2x3 */
+.pain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-top:3.5rem}
+.pain{background:var(--card);padding:2rem 2.2rem;transition:background .2s}
+.pain:hover{background:var(--card2)}
+.pain-mark{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue3);margin-bottom:.8rem}
+.pain h4{font-size:.92rem;font-weight:700;color:var(--white);margin-bottom:.5rem;line-height:1.4}
+.pain p{font-size:.79rem;color:var(--t2);line-height:1.75}
+@media(max-width:640px){.pain-grid{grid-template-columns:1fr}}
+
+/* EXCHANGE */
+.exch-wrap{margin-top:3rem}
+.exch-note{font-size:.75rem;color:var(--t3);margin-bottom:2rem;line-height:1.7;padding:1rem 1.4rem;border:1px solid var(--border2);border-radius:8px;background:var(--card)}
+.exch-grid{display:flex;flex-wrap:wrap;gap:.6rem}
+.exch-pill{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:.55rem 1.1rem;font-size:.78rem;font-weight:600;color:var(--t2);transition:all .2s;white-space:nowrap}
+.exch-pill:hover{border-color:var(--blue3);color:var(--t1)}
+
+/* PROCESS horizontal */
+.process-wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:3.5rem;position:relative}
+.process-wrap::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,var(--blue3),transparent);z-index:0}
+.proc{text-align:center;position:relative;z-index:1;padding:0 1rem}
+.proc-num{width:56px;height:56px;border-radius:50%;background:var(--card2);border:2px solid var(--blue2);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-family:'Plus Jakarta Sans',sans-serif;font-size:.85rem;font-weight:800;color:var(--blue3)}
+.proc h4{font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.4rem}
+.proc p{font-size:.75rem;color:var(--t2);line-height:1.7}
+@media(max-width:768px){.process-wrap{grid-template-columns:1fr 1fr;gap:1.5rem}.process-wrap::before{display:none}}
+@media(max-width:400px){.process-wrap{grid-template-columns:1fr}}
+
+/* FAQ 2-col on desktop */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;margin-top:3.5rem}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:first-child,.faq-item:nth-child(2){border-top:1px solid var(--border)}
+.faq-btn{width:100%;text-align:left;background:none;border:none;padding:1.2rem 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:'Noto Sans KR',sans-serif;font-size:.86rem;font-weight:600;color:var(--t1);gap:1rem;transition:color .2s}
+.faq-btn:hover{color:var(--white)}
+.faq-ico{color:var(--blue3);font-size:.8rem;font-weight:700;flex-shrink:0;transition:transform .3s;font-family:'Plus Jakarta Sans',sans-serif}
+.faq-body{font-size:.81rem;color:var(--t2);line-height:1.85;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s}
+.faq-item.open .faq-body{max-height:200px;padding-bottom:1.2rem}
+.faq-item.open .faq-ico{transform:rotate(45deg);color:var(--blue4)}
+.faq-item.open .faq-btn{color:var(--white)}
+@media(max-width:768px){.faq-grid{grid-template-columns:1fr}}
+
+/* CONTACT */
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.contact-text .sec-h{margin-bottom:1rem}
+.contact-links{display:flex;flex-direction:column;gap:.8rem;margin-top:2rem}
+.contact-link{display:flex;align-items:center;gap:1rem;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.4rem;text-decoration:none;transition:all .2s}
+.contact-link:hover{border-color:var(--blue3);background:var(--card2)}
+.cl-ico{font-size:1.2rem}
+.cl-text strong{display:block;font-size:.85rem;font-weight:700;color:var(--white);margin-bottom:.1rem}
+.cl-text span{font-size:.75rem;color:var(--t2)}
+.contact-form{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:2.2rem}
+.form-group{margin-bottom:1.2rem}
+label{display:block;font-size:.75rem;font-weight:700;color:var(--t2);margin-bottom:.5rem;letter-spacing:.03em}
+input,textarea,select{width:100%;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:.8rem 1rem;font-family:'Noto Sans KR',sans-serif;font-size:.83rem;color:var(--t1);outline:none;transition:border-color .2s;-webkit-appearance:none}
+input:focus,textarea:focus,select:focus{border-color:var(--blue3)}
+textarea{height:110px;resize:vertical}
+select option{background:var(--bg3);color:var(--t1)}
+.form-submit{width:100%;background:var(--blue2);color:#fff;border:none;padding:.9rem;border-radius:8px;font-family:'Noto Sans KR',sans-serif;font-size:.9rem;font-weight:700;cursor:pointer;transition:all .2s;margin-top:.5rem}
+.form-submit:hover{background:var(--blue3)}
+.form-note{font-size:.72rem;color:var(--t3);margin-top:1rem;line-height:1.7}
+@media(max-width:800px){.contact-wrap{grid-template-columns:1fr;gap:2.5rem}}
+
+/* FOOTER */
+footer{background:#020712;border-top:1px solid var(--border);padding:3rem 5vw}
+.foot-wrap{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem}
+.foot-left .logo{display:block;margin-bottom:.4rem}
+.foot-tagline{font-size:.72rem;color:var(--t3)}
+.foot-info{text-align:right;font-size:.72rem;color:var(--t3);line-height:2.1}
+.foot-info a{color:var(--t3);text-decoration:none}
+.foot-info a:hover{color:var(--blue3)}
+@media(max-width:640px){.foot-wrap{flex-direction:column}.foot-info{text-align:left}}
+
+/* UTIL */
+.divider{width:100%;height:1px;background:var(--border)}
 </style>
 </head>
 <body>
-<nav>
-  <a href="#" class="logo">Chain<span>On</span></a>
-  <ul class="nav-links">
-    <li><a href="#why" data-ko="ChainOn이란" data-en="About">ChainOn이란</a></li>
-    <li><a href="#services" data-ko="서비스" data-en="Services">서비스</a></li>
-    <li><a href="#exchanges" data-ko="글로벌 거래소" data-en="Exchanges">글로벌 거래소</a></li>
-    <li><a href="#process" data-ko="진행 방식" data-en="Process">진행 방식</a></li>
-    <li><a href="#faq" data-ko="FAQ" data-en="FAQ">FAQ</a></li>
-  </ul>
-  <div class="nav-right">
-    <div class="lang-toggle">
-      <button class="lang-btn active" onclick="setLang('ko')">KO</button>
-      <button class="lang-btn" onclick="setLang('en')">EN</button>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">Chain<span>On</span></a>
+    <ul class="nav-links">
+      <li><a href="#services" data-ko="서비스" data-en="Services">서비스</a></li>
+      <li><a href="#exchanges" data-ko="거래소 네트워크" data-en="Exchange Network">거래소 네트워크</a></li>
+      <li><a href="#process" data-ko="진행 방식" data-en="Process">진행 방식</a></li>
+      <li><a href="#faq" data-ko="FAQ" data-en="FAQ">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-btn active" onclick="setLang('ko')" id="btn-ko">KO</button>
+      <button class="lang-btn" onclick="setLang('en')" id="btn-en">EN</button>
+      <a href="#contact" class="nav-cta" data-ko="무료 상담" data-en="Contact Us">무료 상담</a>
     </div>
-    <a href="#contact" class="nav-cta" data-ko="무료 상담" data-en="Free Consultation">무료 상담</a>
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-  <span class="hero-eyebrow">Blockchain Growth Partner</span>
-  <h1 id="hero-h1">재단의 성장에<br><span class="accent">ChainOn이 함께합니다</span></h1>
-  <p class="hero-sub" data-ko="마케팅 기획부터 글로벌 커뮤니티 운영, 글로벌 거래소 상장 지원까지. ChainOn 팀이 재단과 함께 움직입니다." data-en="From marketing strategy to global community management and exchange listing support. We don't just take orders — we work inside your foundation.">마케팅 기획부터 글로벌 커뮤니티 운영, 글로벌 거래소 상장 지원까지. ChainOn 팀이 재단과 함께 움직입니다.</p>
-  <p class="hero-proof" data-ko="국내 최저 수준의 비용으로, 더 넓은 범위를 커버합니다." data-en="The most competitive pricing in the market. The widest coverage in the industry.">국내 최저 수준의 비용으로, 더 넓은 범위를 커버합니다.</p>
-  <div class="hero-btns">
-    <a href="#contact" class="btn-primary" data-ko="무료 상담 시작하기" data-en="Get a Free Consultation">무료 상담 시작하기</a>
-    <a href="#services" class="btn-secondary" data-ko="서비스 살펴보기" data-en="Explore Services">서비스 살펴보기</a>
+  <div class="hero-glow1"></div><div class="hero-glow2"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div>
+        <div class="hero-kicker"><span class="kicker-bar"></span><span class="kicker-txt">Blockchain Growth Partner</span></div>
+        <h1 data-ko="재단의 성장에<br><em>ChainOn이</em><br>함께합니다" data-en="Your Foundation's Growth,<br><em>Powered by</em><br>ChainOn">재단의 성장에<br><em>ChainOn이</em><br>함께합니다</h1>
+        <p class="hero-desc" data-ko="마케팅 기획부터 글로벌 커뮤니티 운영, 거래소 상장 지원까지. ChainOn 팀이 재단과 함께 움직입니다. 국내 최저 수준의 비용으로, 더 넓은 범위를 커버합니다." data-en="From marketing strategy to global community operations and exchange listing support. ChainOn moves together with your foundation. Maximum coverage at competitive rates.">마케팅 기획부터 글로벌 커뮤니티 운영, 거래소 상장 지원까지. ChainOn 팀이 재단과 함께 움직입니다. 국내 최저 수준의 비용으로, 더 넓은 범위를 커버합니다.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary" data-ko="무료 상담 시작하기" data-en="Start Free Consultation">무료 상담 시작하기</a>
+          <a href="#services" class="btn-secondary" data-ko="서비스 살펴보기" data-en="Explore Services">서비스 살펴보기</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-n">300<sup>+</sup></div>
+          <div class="hstat-l" data-ko="한국·일본·글로벌 KOL" data-en="Korea · Japan · Global KOL">한국·일본·글로벌 KOL</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n">50<sup>+</sup></div>
+          <div class="hstat-l" data-ko="프로젝트 운영 경험" data-en="Projects Delivered">프로젝트 운영 경험</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n">7<sup>년+</sup></div>
+          <div class="hstat-l" data-ko="블록체인 마케팅 전문 경력" data-en="Blockchain Marketing Experience">블록체인 마케팅 전문 경력</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n">20<sup>+</sup></div>
+          <div class="hstat-l" data-ko="글로벌 거래소 네트워크" data-en="Global Exchange Network">글로벌 거래소 네트워크</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<div class="stats">
-  <div class="stat"><div class="stat-num">300<sub>+</sub></div><div class="stat-label" data-ko="한국·일본·글로벌 KOL" data-en="KOL Network (KR/JP/Global)">한국·일본·글로벌 KOL</div></div>
-  <div class="stat"><div class="stat-num">50<sub>+</sub></div><div class="stat-label" data-ko="프로젝트 운영 경험" data-en="Projects Supported">프로젝트 운영 경험</div></div>
-  <div class="stat"><div class="stat-num">6<sub>+</sub></div><div class="stat-label" data-ko="운영 채널 다각화" data-en="Channels Managed">운영 채널 다각화</div></div>
-  <div class="stat"><div class="stat-num">Global</div><div class="stat-label" data-ko="거래소 상장 절차 지원" data-en="Exchange Listing Support">거래소 상장 절차 지원</div></div>
+<!-- TICKER -->
+<div class="ticker-sec">
+  <div class="ticker-track">
+    <span class="t-pill">Binance</span><span class="t-pill">KuCoin</span><span class="t-pill">Bybit</span><span class="t-pill">OKX</span><span class="t-pill">Gate.io</span><span class="t-pill">Bitget</span><span class="t-pill">MEXC</span><span class="t-pill">HTX</span><span class="t-pill">BingX</span><span class="t-pill">BitMart</span><span class="t-pill">XT.com</span><span class="t-pill">CoinW</span><span class="t-pill">Pionex</span><span class="t-pill">LBank</span><span class="t-pill">Probit</span><span class="t-pill">WhiteBIT</span>
+    <span class="t-pill">Binance</span><span class="t-pill">KuCoin</span><span class="t-pill">Bybit</span><span class="t-pill">OKX</span><span class="t-pill">Gate.io</span><span class="t-pill">Bitget</span><span class="t-pill">MEXC</span><span class="t-pill">HTX</span><span class="t-pill">BingX</span><span class="t-pill">BitMart</span><span class="t-pill">XT.com</span><span class="t-pill">CoinW</span><span class="t-pill">Pionex</span><span class="t-pill">LBank</span><span class="t-pill">Probit</span><span class="t-pill">WhiteBIT</span>
+  </div>
 </div>
 
-<section id="services">
-  <div style="text-align:center;max-width:600px;margin:0 auto">
-    <span class="section-label" data-ko="Services" data-en="Services">Services</span>
-    <h2 class="section-title" id="svc-title">아홉 개 서비스.<br>창구는 하나입니다.</h2>
-    <p class="section-desc" style="margin:0 auto" data-ko="각각 선택할 수도, 묶어서 운영할 수도 있습니다. 어떤 조합이든 소통은 ChainOn 하나로 통합됩니다." data-en="Choose individual services or bundle them. Either way, you only talk to one team.">각각 선택할 수도, 묶어서 운영할 수도 있습니다. 어떤 조합이든 소통은 ChainOn 하나로 통합됩니다.</p>
-  </div>
-  <div class="services-grid">
-    <div class="service-item"><div class="service-icon">📄</div><h3 data-ko="백서 · 가이드 · 홈페이지 올인원" data-en="Whitepaper · Guide · Website All-in-One">백서 · 가이드 · 홈페이지 올인원</h3><p data-ko="프로젝트 론칭에 필요한 백서, 라이트페이퍼, 원페이저, 피치덱, 홈페이지까지. 재단이 제공하는 기초 자료를 바탕으로 ChainOn이 구성과 문장, 디자인을 완성합니다. 한 팀이 일관된 브랜드로 만들어드립니다." data-en="Whitepaper, lightpaper, one-pager, pitch deck, and website — everything a project needs at launch. Based on your foundation's materials, ChainOn handles structure, copy, and design. One team, one consistent brand voice.">프로젝트 론칭에 필요한 백서, 라이트페이퍼, 원페이저, 피치덱, 홈페이지까지. 재단이 제공하는 기초 자료를 바탕으로 ChainOn이 구성과 문장, 디자인을 완성합니다. 한 팀이 일관된 브랜드로 만들어드립니다.</p></div>
-    <div class="service-item"><div class="service-icon">📱</div><h3 data-ko="커뮤니티 콘텐츠 운영" data-en="Community Content Management">커뮤니티 콘텐츠 운영</h3><p data-ko="텔레그램, 디스코드 채널의 콘텐츠 기획과 참여 활성화를 지원합니다. 프로젝트 성격과 단계에 맞게 운영 방식을 설계합니다." data-en="Content planning and engagement support for Telegram and Discord. We design the operation model based on your project stage and goals.">텔레그램, 디스코드 채널의 콘텐츠 기획과 참여 활성화를 지원합니다. 프로젝트 성격과 단계에 맞게 운영 방식을 설계합니다.</p></div>
-    <div class="service-item"><div class="service-icon">🌐</div><h3 data-ko="소셜 채널 통합 운영" data-en="Social Channel Management">소셜 채널 통합 운영</h3><p data-ko="X, 인스타그램, 페이스북, 디스코드 등 채널별 특성을 고려한 콘텐츠 전략과 운영을 프로젝트 니즈에 맞게 지원합니다." data-en="X, Instagram, Facebook, Discord. Channel-specific strategies tailored to your project's needs and target audience.">X, 인스타그램, 페이스북, 디스코드 등 채널별 특성을 고려한 콘텐츠 전략과 운영을 프로젝트 니즈에 맞게 지원합니다.</p></div>
-    <div class="service-item"><div class="service-icon">📡</div><h3 data-ko="KOL 네트워크 마케팅" data-en="KOL Network Marketing">KOL 네트워크 마케팅</h3><p data-ko="한국, 일본, 글로벌 300명 이상의 인플루언서 네트워크를 보유하고 있습니다. 프로젝트에 맞는 KOL을 선별해 협력합니다." data-en="300+ influencer network across Korea, Japan, and global markets. We match the right KOLs to your project's profile and target region.">한국, 일본, 글로벌 300명 이상의 인플루언서 네트워크를 보유하고 있습니다. 프로젝트에 맞는 KOL을 선별해 협력합니다.</p></div>
-    <div class="service-item"><div class="service-icon">🏛️</div><h3 data-ko="글로벌 거래소 상장 지원" data-en="Global Exchange Listing Support">글로벌 거래소 상장 지원</h3><p data-ko="7년간 50건 이상의 글로벌 거래소 상장 경험. Binance, KuCoin, Bybit 등 주요 글로벌 거래소의 상장 절차와 준비 요건을 함께 검토하고 지원합니다." data-en="7 years and 50+ global exchange listings. We guide preparation and process for major exchanges including Binance, KuCoin, and Bybit.">7년간 50건 이상의 글로벌 거래소 상장 경험. Binance, KuCoin, Bybit 등 주요 글로벌 거래소의 상장 절차와 준비 요건을 함께 검토하고 지원합니다.</p></div>
-    <div class="service-item"><div class="service-icon">✏️</div><h3 data-ko="기획 및 콘텐츠 제작" data-en="Strategy & Content Production">기획 및 콘텐츠 제작</h3><p data-ko="마케팅 전략 기획부터 콘텐츠 제작, 배포까지 올인원으로 지원합니다. 재단이 신경 써야 할 마케팅 리소스를 최소화합니다." data-en="End-to-end support from strategy to content creation and distribution. We minimize the marketing workload on your foundation's team.">마케팅 전략 기획부터 콘텐츠 제작, 배포까지 올인원으로 지원합니다. 재단이 신경 써야 할 마케팅 리소스를 최소화합니다.</p></div>
-    <div class="service-item"><div class="service-icon">🎨</div><h3 data-ko="맞춤 비주얼 콘텐츠 제작" data-en="Custom Visual Content Production">맞춤 비주얼 콘텐츠 제작</h3><p data-ko="프로젝트 브랜드에 맞는 이미지, 배너, SNS 비주얼 콘텐츠를 제작합니다. ChainOn이 콘텐츠 기획부터 시각화까지 일관된 톤으로 빠르게 납품합니다." data-en="On-brand image assets, banners, and social visuals — produced in-house by ChainOn. Consistent tone, fast turnaround.">프로젝트 브랜드에 맞는 이미지, 배너, SNS 비주얼 콘텐츠를 제작합니다. ChainOn이 콘텐츠 기획부터 시각화까지 일관된 톤으로 빠르게 납품합니다.</p></div>
-    <div class="service-item"><div class="service-icon">🎯</div><h3 data-ko="에어드랍 · 바이럴 캠페인" data-en="Airdrop & Viral Campaign">에어드랍 · 바이럴 캠페인</h3><p data-ko="커뮤니티 성장을 위한 에어드랍 기획, 온체인 이벤트 설계, 바이럴 캠페인 운영을 지원합니다. 참여를 유도하고 실제 유저를 늘리는 방향으로 설계합니다." data-en="Airdrop planning, on-chain event design, and viral campaign management to grow your community. Every campaign is built to drive real participation, not just numbers.">커뮤니티 성장을 위한 에어드랍 기획, 온체인 이벤트 설계, 바이럴 캠페인 운영을 지원합니다. 참여를 유도하고 실제 유저를 늘리는 방향으로 설계합니다.</p></div>
-    <div class="service-item"><div class="service-icon">📊</div><h3 data-ko="월간 성과 리포트" data-en="Monthly Performance Report">월간 성과 리포트</h3><p data-ko="매달 정량 지표를 기반으로 성과를 공유하고, 다음 달 운영 방향을 함께 검토합니다. 투명한 소통이 기본입니다." data-en="Monthly quantitative reports with a forward-looking strategy review. Transparency is non-negotiable.">매달 정량 지표를 기반으로 성과를 공유하고, 다음 달 운영 방향을 함께 검토합니다. 투명한 소통이 기본입니다.</p></div>
-  </div>
-</section>
-
-<section class="why" id="why">
-  <div class="why-inner">
-    <div>
-      <span class="section-label">Why ChainOn</span>
-      <h2 class="section-title" id="why-title">재단의 성장을<br>함께 만들어갑니다</h2>
-      <p class="section-desc" data-ko="ChainOn은 재단의 목표를 우리 목표처럼 이해하고, 안에서 같이 움직입니다. 비용은 최소화하고, 커버리지는 넓힙니다." data-en="ChainOn aligns with your foundation's goals and works from the inside. We minimize your costs and maximize reach across every channel.">ChainOn은 재단의 목표를 우리 목표처럼 이해하고, 안에서 같이 움직입니다. 비용은 최소화하고, 커버리지는 넓힙니다.</p>
-    </div>
-    <div class="why-cards">
-      <div class="why-card">
-        <div class="why-card-icon">🤝</div>
-        <div class="why-card-body">
-          <h3 data-ko="재단과 같은 방향을 봅니다" data-en="We share your foundation's vision">재단과 같은 방향을 봅니다</h3>
-          <p data-ko="단기 성과보다 프로젝트의 지속 가능한 성장에 집중합니다. 캠페인이 끝나도 관계는 이어집니다." data-en="We focus on sustainable growth, not short-term metrics. Our relationship continues beyond any single campaign.">단기 성과보다 프로젝트의 지속 가능한 성장에 집중합니다. 캠페인이 끝나도 관계는 이어집니다.</p>
-        </div>
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="eyebrow"><span class="eyebrow-bar"></span><span class="eyebrow-txt">Services</span></div>
+    <h2 class="sec-h" data-ko="아홉 개 서비스.<br>창구는 하나입니다" data-en="Nine Services.<br>One Point of Contact">아홉 개 서비스.<br>창구는 하나입니다</h2>
+    <p class="sec-d" data-ko="각각 선택할 수도, 묶어서 운영할 수도 있습니다. 어떤 조합이든 소통은 ChainOn 하나로 통합됩니다." data-en="Mix and match, or bundle them all. Any combination, one contact: ChainOn.">각각 선택할 수도, 묶어서 운영할 수도 있습니다. 어떤 조합이든 소통은 ChainOn 하나로 통합됩니다.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <span class="svc-ico">📄</span>
+        <h3 data-ko="백서 · 가이드 · 홈페이지" data-en="Whitepaper · Guide · Website">백서 · 가이드 · 홈페이지</h3>
+        <p data-ko="백서, 라이트페이퍼, 원페이저, 피치덱, 홈페이지까지. 일관된 브랜드로 완성합니다." data-en="Whitepaper, lightpaper, one-pager, pitch deck, and website — all under one consistent brand.">백서, 라이트페이퍼, 원페이저, 피치덱, 홈페이지까지. 일관된 브랜드로 완성합니다.</p>
       </div>
-      <div class="why-card">
-        <div class="why-card-icon">⚡</div>
-        <div class="why-card-body">
-          <h3 data-ko="창구 하나로 모든 채널을 커버합니다" data-en="One contact. All channels covered.">창구 하나로 모든 채널을 커버합니다</h3>
-          <p data-ko="텔레그램, X, 인스타그램, 페이스북, 디스코드. 채널마다 담당자를 따로 둘 필요가 없습니다." data-en="Telegram, X, Instagram, Facebook, Discord. No need to coordinate multiple teams across channels.">텔레그램, X, 인스타그램, 페이스북, 디스코드. 채널마다 담당자를 따로 둘 필요가 없습니다.</p>
-        </div>
+      <div class="svc">
+        <span class="svc-ico">📱</span>
+        <h3 data-ko="커뮤니티 콘텐츠 운영" data-en="Community Content Management">커뮤니티 콘텐츠 운영</h3>
+        <p data-ko="텔레그램, 디스코드 채널의 콘텐츠 기획과 공식 채널 운영을 지원합니다." data-en="Content planning and official channel management for Telegram and Discord.">텔레그램, 디스코드 채널의 콘텐츠 기획과 공식 채널 운영을 지원합니다.</p>
       </div>
-      <div class="why-card">
-        <div class="why-card-icon">💰</div>
-        <div class="why-card-body">
-          <h3 data-ko="재단 예산을 아끼는 게 우리 목표입니다" data-en="Saving your budget is part of the job">재단 예산을 아끼는 게 우리 목표입니다</h3>
-          <p data-ko="국내 동급 서비스 대비 가장 낮은 비용 구조를 유지합니다. 재단이 아낀 예산은 개발과 사업에 씁니다." data-en="We maintain the most competitive pricing for comparable services. What you save on marketing goes back into building your product.">국내 동급 서비스 대비 가장 낮은 비용 구조를 유지합니다. 재단이 아낀 예산은 개발과 사업에 씁니다.</p>
-        </div>
+      <div class="svc">
+        <span class="svc-ico">🌐</span>
+        <h3 data-ko="소셜 채널 통합 운영" data-en="Social Media Management">소셜 채널 통합 운영</h3>
+        <p data-ko="X, 인스타그램, 페이스북, 디스코드. 채널별 특성을 고려한 콘텐츠 전략으로 운영합니다." data-en="X, Instagram, Facebook, Discord — tailored content strategy across every channel.">X, 인스타그램, 페이스북, 디스코드. 채널별 특성을 고려한 콘텐츠 전략으로 운영합니다.</p>
       </div>
-    </div>
-  </div>
-</section><section class="pain" id="pain">
-  <span class="section-label" data-ko="이런 상황이라면" data-en="Does This Sound Familiar?">이런 상황이라면</span>
-  <h2 class="section-title" id="pain-title" style="max-width:640px">읽다가 멈추게 되는<br>문장이 있을 겁니다</h2>
-  <p class="section-desc" data-ko="설득하려는 게 아닙니다. 아래 중 하나라도 해당되면 그냥 연락 주세요." data-en="We're not here to pitch. If one of these fits, just reach out.">설득하려는 게 아닙니다. 아래 중 하나라도 해당되면 그냥 연락 주세요.</p>
-  <div class="pain-cards">
-    <div class="pain-card"><p><strong data-ko="어디서 시작해야 할지 모릅니다" data-en="You don't know where to start">어디서 시작해야 할지 모릅니다</strong><span data-ko="마케팅이 중요하다는 건 아는데, 누굴 믿어야 할지, 어디서부터 손을 대야 할지 감이 없습니다." data-en="You know marketing matters, but you're not sure who to trust or where to begin.">마케팅이 중요하다는 건 아는데, 누굴 믿어야 할지, 어디서부터 손을 대야 할지 감이 없습니다.</span></p></div>
-    <div class="pain-card"><p><strong data-ko="개발팀은 있는데 마케팅이 없습니다" data-en="You have a dev team but no marketing">개발팀은 있는데 마케팅이 없습니다</strong><span data-ko="채널은 만들었는데 운영할 사람이 없고, 콘텐츠도 없고, 반응도 없습니다." data-en="The channels are set up but there's no one to run them, no content, no engagement.">채널은 만들었는데 운영할 사람이 없고, 콘텐츠도 없고, 반응도 없습니다.</span></p></div>
-    <div class="pain-card"><p><strong data-ko="이전 에이전시에서 기대한 결과가 나오지 않았습니다" data-en="A previous agency underdelivered">이전 에이전시에서 기대한 결과가 나오지 않았습니다</strong><span data-ko="비용은 썼는데 측정 가능한 결과물이 없었습니다. 이번엔 숫자로 확인하고 싶습니다." data-en="Money was spent but there were no measurable results. This time you want numbers.">비용은 썼는데 측정 가능한 결과물이 없었습니다. 이번엔 숫자로 확인하고 싶습니다.</span></p></div>
-    <div class="pain-card"><p><strong data-ko="채널이 여럿인데 메시지가 제각각입니다" data-en="Multiple channels, inconsistent messaging">채널이 여럿인데 메시지가 제각각입니다</strong><span data-ko="팀마다 톤이 다르고 누가 책임자인지 불명확해서 재단 담당자만 중간에서 바쁩니다." data-en="Each team has a different tone. Nobody's clearly in charge. Your internal team is stuck in the middle.">팀마다 톤이 다르고 누가 책임자인지 불명확해서 재단 담당자만 중간에서 바쁩니다.</span></p></div>
-    <div class="pain-card"><p><strong data-ko="거래소 상장 준비를 어떻게 해야 할지 모릅니다" data-en="You're not sure how to prepare for exchange listing">거래소 상장 준비를 어떻게 해야 할지 모릅니다</strong><span data-ko="어떤 거래소가 현실적인지, 무엇을 준비해야 하는지 로드맵이 없습니다." data-en="You're not sure which exchange is realistic for your stage, or what you need to prepare.">어떤 거래소가 현실적인지, 무엇을 준비해야 하는지 로드맵이 없습니다.</span></p></div>
-    <div class="pain-card"><p><strong data-ko="글로벌 시장을 함께 볼 파트너가 필요합니다" data-en="You need a partner for global markets">글로벌 시장을 함께 볼 파트너가 필요합니다</strong><span data-ko="한국 시장만으로는 한계가 있습니다. 일본, 동남아, 글로벌 커뮤니티까지 같이 볼 팀이 필요합니다." data-en="One market isn't enough. You need a team that can move across Korea, Japan, Southeast Asia, and beyond.">한국 시장만으로는 한계가 있습니다. 일본, 동남아, 글로벌 커뮤니티까지 같이 볼 팀이 필요합니다.</span></p></div>
-  </div>
-  <div class="pain-cta">
-    <p data-ko="하나라도 해당되면 지금 바로 연락 주세요. 상담은 무료입니다." data-en="If even one of these fits, reach out now. Consultation is free.">하나라도 해당되면 지금 바로 연락 주세요. 상담은 무료입니다.</p>
-    <div style="display:flex;gap:.75rem;flex-wrap:wrap">
-      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="btn-white" data-ko="무료 상담 신청" data-en="Get a Free Consultation">무료 상담 신청</button>
-    </div>
-  </div>
-</section>
-
-<section class="exchanges" id="exchanges">
-  <span class="section-label" data-ko="Exchange Network" data-en="Exchange Network">Exchange Network</span>
-  <h2 class="section-title" id="ex-title" style="max-width:580px">어느 글로벌 거래소를<br>목표로 하고 있나요?</h2>
-  <p class="section-desc" data-ko="7년간 50건 이상의 글로벌 거래소 상장 레퍼런스. 풍부한 경험을 바탕으로 프로젝트의 현재 상태에 맞는 현실적인 상장 로드맵을 함께 설계하고, 성공 확률을 최대한 높이는 방향으로 지원합니다." data-en="7 years. 50+ global exchange listings. We design a realistic listing roadmap based on your project's current state and work to maximize your chances of success.">7년간 50건 이상의 글로벌 거래소 상장 레퍼런스. 풍부한 경험을 바탕으로 프로젝트의 현재 상태에 맞는 현실적인 상장 로드맵을 함께 설계하고, 성공 확률을 최대한 높이는 방향으로 지원합니다.</p>
-  <p class="exchange-note" data-ko="※ ChainOn은 글로벌 거래소 상장 절차를 지원하며, 상장 여부는 각 글로벌 거래소의 심사 기준과 고유 결정에 따릅니다." data-en="※ ChainOn supports the listing preparation process. Listing decisions are made solely at each exchange's discretion.">※ ChainOn은 글로벌 거래소 상장 절차를 지원하며, 상장 여부는 각 글로벌 거래소의 심사 기준과 고유 결정에 따릅니다.</p>
-  <div class="exchange-grid">
-    <span class="ex-badge tier1">Binance Alpha</span><span class="ex-badge tier1">KuCoin</span><span class="ex-badge tier1">Bybit</span><span class="ex-badge tier1">OKX</span><span class="ex-badge tier1">Gate.io</span><span class="ex-badge tier1">Bitget</span><span class="ex-badge">MEXC</span><span class="ex-badge">HTX</span><span class="ex-badge">BingX</span><span class="ex-badge">BitMart</span><span class="ex-badge">XT.com</span><span class="ex-badge">CoinW</span><span class="ex-badge">Pionex</span><span class="ex-badge">LBank</span><span class="ex-badge">Probit</span><span class="ex-badge">DigiFinex</span><span class="ex-badge">WhiteBIT</span><span class="ex-badge">CoinStore</span><span class="ex-badge">Tapbit</span><span class="ex-badge">Toobit</span><span class="ex-badge" data-ko="+ 더보기" data-en="+ More">+ 더보기</span>
-  </div>
-</section>
-
-<div class="cta-band">
-  <span class="section-label" style="display:inline-block;margin-bottom:.75rem" data-ko="Cost" data-en="Cost">Cost</span>
-  <h2 id="cta-h2">비용이 얼마나 나올까요?</h2>
-  <p data-ko="프로젝트마다 필요한 게 다릅니다. 먼저 상황을 들어보고 맞는 구성을 제안드립니다. 상담은 무료입니다." data-en="Every project is different. We listen first, then propose the right package. No commitment required.">프로젝트마다 필요한 게 다릅니다. 먼저 상황을 들어보고 맞는 구성을 제안드립니다. 상담은 무료입니다.</p>
-  <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="btn-white" data-ko="견적 알아보기" data-en="Request a Quote">견적 알아보기</button>
-</div>
-
-<section id="process">
-  <div style="text-align:center;max-width:600px;margin:0 auto">
-    <span class="section-label" data-ko="Process" data-en="Process">Process</span>
-    <h2 class="section-title" id="proc-title">복잡하지 않습니다.<br>다섯 단계면 됩니다.</h2>
-  </div>
-  <div class="process-steps">
-    <div class="process-step"><div class="step-dot">01</div><h4 data-ko="무료 상담" data-en="Free Consultation">무료 상담</h4><p data-ko="지금 어디쯤 있는지 얘기해주세요" data-en="Tell us where your project stands">지금 어디쯤 있는지 얘기해주세요</p></div>
-    <div class="process-step"><div class="step-dot">02</div><h4 data-ko="전략 설계" data-en="Strategy Design">전략 설계</h4><p data-ko="프로젝트 맞춤 로드맵을 제안합니다" data-en="We propose a tailored roadmap">프로젝트 맞춤 로드맵을 제안합니다</p></div>
-    <div class="process-step"><div class="step-dot">03</div><h4 data-ko="계약 및 킥오프" data-en="Kickoff">계약 및 킥오프</h4><p data-ko="범위 확정 후 팀이 바로 붙습니다" data-en="Scope confirmed. Team activated.">범위 확정 후 팀이 바로 붙습니다</p></div>
-    <div class="process-step"><div class="step-dot">04</div><h4 data-ko="운영 시작" data-en="Execution">운영 시작</h4><p data-ko="채널 운영, KOL, 상장 절차 병행" data-en="Channels, KOLs, and listing in parallel">채널 운영, KOL, 상장 절차 병행</p></div>
-    <div class="process-step"><div class="step-dot">05</div><h4 data-ko="월간 리포트" data-en="Monthly Report">월간 리포트</h4><p data-ko="숫자 공유 후 다음 달 방향 조정" data-en="Results shared. Next month refined.">숫자 공유 후 다음 달 방향 조정</p></div>
-  </div>
-</section>
-
-<section class="faq" id="faq">
-  <span class="section-label" data-ko="FAQ" data-en="FAQ">FAQ</span>
-  <h2 class="section-title" id="faq-title" style="max-width:500px">자주 받는 질문들</h2>
-  <div class="faq-list">
-    <div class="faq-item"><div class="faq-q" data-ko="블록체인 마케팅이 처음인데 의뢰할 수 있나요?" data-en="We're new to blockchain marketing. Can we still work with you?">블록체인 마케팅이 처음인데 의뢰할 수 있나요?</div><div class="faq-a" data-ko="오히려 초기에 함께 시작하는 편이 낫습니다. 방향을 처음부터 같이 잡으면 나중에 수정하는 비용이 훨씬 줄어듭니다. 아무것도 모르는 상태로 연락 주셔도 됩니다." data-en="Starting early is actually better. Setting the right direction from the beginning saves significant time and cost later. You don't need to have everything figured out before reaching out.">오히려 초기에 함께 시작하는 편이 낫습니다.</div></div>
-    <div class="faq-item"><div class="faq-q" data-ko="상담 비용이 있나요?" data-en="Is the initial consultation free?">상담 비용이 있나요?</div><div class="faq-a" data-ko="없습니다. 어떤 경우에도 상담은 무료입니다. 상황을 먼저 파악한 후 필요한 서비스와 비용을 안내드립니다." data-en="Yes, completely free. We learn about your project first, then propose the right services and pricing. No commitment required.">없습니다. 어떤 경우에도 상담은 무료입니다.</div></div>
-    <div class="faq-item"><div class="faq-q" data-ko="한국 프로젝트만 되나요?" data-en="Do you only work with Korean projects?">한국 프로젝트만 되나요?</div><div class="faq-a" data-ko="아닙니다. 한국, 일본, 글로벌 시장을 모두 커버합니다. 영어 채널 운영과 해외 KOL 연계도 기본 서비스에 포함됩니다." data-en="Not at all. We cover Korean, Japanese, and global markets. English channel management and international KOL partnerships are included in our core service.">아닙니다. 한국, 일본, 글로벌 시장을 모두 커버합니다.</div></div>
-    <div class="faq-item"><div class="faq-q" data-ko="거래소 상장을 보장해주나요?" data-en="Can you guarantee an exchange listing?">거래소 상장을 보장해주나요?</div><div class="faq-a" data-ko="상장 여부는 각 거래소의 자체 심사와 결정에 따르기 때문에 어떤 회사도 보장할 수 없습니다. ChainOn은 준비 과정과 절차를 함께 지원하며, 거래소와의 소통을 돕습니다." data-en="No company can guarantee a listing — that decision belongs solely to each exchange. ChainOn supports your preparation process and facilitates communication with exchanges to maximize your readiness.">상장 여부는 각 거래소의 자체 심사와 결정에 따르기 때문에 어떤 회사도 보장할 수 없습니다.</div></div>
-    <div class="faq-item"><div class="faq-q" data-ko="진행 중에 어떻게 소통하나요?" data-en="How do we communicate during the engagement?">진행 중에 어떻게 소통하나요?</div><div class="faq-a" data-ko="전담 채널 하나로 소통합니다. 여러 팀에 각각 연락할 필요가 없습니다. 매달 정량 지표 기반의 리포트도 제공합니다." data-en="Through one dedicated channel. You never need to contact multiple teams. Monthly quantitative reports are provided as standard.">전담 채널 하나로 소통합니다. 여러 팀에 각각 연락할 필요가 없습니다.</div></div>
-    <div class="faq-item"><div class="faq-q" data-ko="최소 계약 기간이 있나요?" data-en="Is there a minimum contract period?">최소 계약 기간이 있나요?</div><div class="faq-a" data-ko="프로젝트 상황에 따라 유연하게 협의합니다. 단기 캠페인부터 장기 파트너십까지 다양한 형태로 운영합니다." data-en="We're flexible. From short-term campaigns to long-term partnerships, we structure the engagement around your project's needs.">프로젝트 상황에 따라 유연하게 협의합니다.</div></div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="contact-inner">
-    <div>
-      <span class="section-label" data-ko="Contact" data-en="Contact">Contact</span>
-      <h2 class="section-title" id="contact-title">지금 어디쯤<br>있는지 알려주세요</h2>
-      <p class="section-desc" style="margin-bottom:2rem" data-ko="완벽한 계획이 없어도 됩니다. 막힌 지점이 어딘지만 말씀해 주시면 ChainOn이 거기서부터 같이 봅니다. 상담은 무료입니다." data-en="You don't need a perfect plan. Just tell us where things are stuck. ChainOn will take it from there. Free consultation, no commitment.">완벽한 계획이 없어도 됩니다. 막힌 지점이 어딘지만 말씀해 주시면 ChainOn이 거기서부터 같이 봅니다. 상담은 무료입니다.</p>
-      <div class="channels">
-        <a href="https://t.me/ChainOn7" class="channel"><div class="channel-icon">✈️</div><div class="channel-text"><strong data-ko="텔레그램으로 문의" data-en="Message on Telegram">텔레그램으로 문의</strong><span data-ko="가장 빠르게 응답받을 수 있습니다" data-en="Fastest response channel">가장 빠르게 응답받을 수 있습니다</span></div></a>
-        <a href="mailto:contact@chainon.kr" class="channel"><div class="channel-icon">✉️</div><div class="channel-text"><strong data-ko="이메일 문의" data-en="Email Us">이메일 문의</strong><span>contact@chainon.kr</span></div></a>
+      <div class="svc">
+        <span class="svc-ico">📡</span>
+        <h3 data-ko="KOL 네트워크 마케팅" data-en="KOL Network Marketing">KOL 네트워크 마케팅</h3>
+        <p data-ko="한국, 일본, 글로벌 300명 이상의 인플루언서 네트워크. 프로젝트에 맞는 KOL을 선별해 협력합니다." data-en="300+ influencers across Korea, Japan, and global markets. Curated KOL partnerships for each project.">한국, 일본, 글로벌 300명 이상의 인플루언서 네트워크. 프로젝트에 맞는 KOL을 선별해 협력합니다.</p>
+      </div>
+      <div class="svc">
+        <span class="svc-ico">🏛️</span>
+        <h3 data-ko="글로벌 거래소 상장 지원" data-en="Exchange Listing Support">글로벌 거래소 상장 지원</h3>
+        <p data-ko="7년간 50건 이상의 레퍼런스. Binance, KuCoin, Bybit 등 주요 거래소 상장 절차를 함께 지원합니다." data-en="50+ listings over 7 years. We support the entire process for Binance, KuCoin, Bybit, and more.">7년간 50건 이상의 레퍼런스. Binance, KuCoin, Bybit 등 주요 거래소 상장 절차를 함께 지원합니다.</p>
+      </div>
+      <div class="svc">
+        <span class="svc-ico">✏️</span>
+        <h3 data-ko="기획 및 콘텐츠 제작" data-en="Strategy & Content Production">기획 및 콘텐츠 제작</h3>
+        <p data-ko="마케팅 전략 기획부터 콘텐츠 제작, 배포까지 올인원으로 지원합니다." data-en="End-to-end: strategy, content creation, and distribution — all in one place.">마케팅 전략 기획부터 콘텐츠 제작, 배포까지 올인원으로 지원합니다.</p>
+      </div>
+      <div class="svc">
+        <span class="svc-ico">🎨</span>
+        <h3 data-ko="맞춤 비주얼 콘텐츠" data-en="Custom Visual Content">맞춤 비주얼 콘텐츠</h3>
+        <p data-ko="이미지, 배너, SNS 비주얼 콘텐츠를 프로젝트 브랜드에 맞게 제작합니다." data-en="Images, banners, and social visuals crafted to match your project brand.">이미지, 배너, SNS 비주얼 콘텐츠를 프로젝트 브랜드에 맞게 제작합니다.</p>
+      </div>
+      <div class="svc">
+        <span class="svc-ico">🎯</span>
+        <h3 data-ko="에어드랍 · 바이럴 캠페인" data-en="Airdrop & Viral Campaigns">에어드랍 · 바이럴 캠페인</h3>
+        <p data-ko="에어드랍 기획, 온체인 이벤트 설계, 바이럴 캠페인 운영으로 실제 유저를 늘립니다." data-en="Airdrop design, on-chain events, and viral campaigns that grow real users.">에어드랍 기획, 온체인 이벤트 설계, 바이럴 캠페인 운영으로 실제 유저를 늘립니다.</p>
+      </div>
+      <div class="svc">
+        <span class="svc-ico">📊</span>
+        <h3 data-ko="월간 성과 리포트" data-en="Monthly Performance Report">월간 성과 리포트</h3>
+        <p data-ko="매달 정량 지표 기반 성과를 공유하고 다음 달 운영 방향을 함께 검토합니다." data-en="Monthly KPI-based reports with a collaborative review of next month's strategy.">매달 정량 지표 기반 성과를 공유하고 다음 달 운영 방향을 함께 검토합니다.</p>
       </div>
     </div>
-    <div>
-      <form class="contact-form" action="https://formspree.io/f/xykqnzyo" method="POST">
-        <div class="form-group">
-          <label data-ko="프로젝트명 / 담당자명" data-en="Project Name / Your Name">프로젝트명 / 담당자명</label>
-          <input type="text" name="project_name" data-placeholder-ko="프로젝트명과 담당자 성함을 적어주세요" data-placeholder-en="Project name and your name" placeholder="프로젝트명과 담당자 성함을 적어주세요">
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec sec-alt sec-border" id="why">
+  <div class="wrap">
+    <div class="why-wrap">
+      <div>
+        <div class="eyebrow"><span class="eyebrow-bar"></span><span class="eyebrow-txt">Why ChainOn</span></div>
+        <h2 class="sec-h" data-ko="재단의 성장을<br>함께 만들어갑니다" data-en="We Build Your<br>Foundation's Growth Together">재단의 성장을<br>함께 만들어갑니다</h2>
+        <p class="sec-d" data-ko="ChainOn은 재단의 목표를 우리 목표처럼 이해하고, 안에서 같이 움직입니다. 비용은 최소화하고, 커버리지는 넓힙니다." data-en="ChainOn understands your foundation's goals as our own and works from the inside. Minimize cost, maximize coverage.">ChainOn은 재단의 목표를 우리 목표처럼 이해하고, 안에서 같이 움직입니다. 비용은 최소화하고, 커버리지는 넓힙니다.</p>
+      </div>
+      <div class="why-cards">
+        <div class="why-card">
+          <span class="why-ico">🤝</span>
+          <div>
+            <h4 data-ko="재단과 같은 방향을 봅니다" data-en="Aligned with Your Vision">재단과 같은 방향을 봅니다</h4>
+            <p data-ko="단기 성과보다 프로젝트의 지속 가능한 성장에 집중합니다. 캠페인이 끝나도 관계는 이어집니다." data-en="We focus on sustainable growth over short-term gains. The relationship continues beyond any campaign.">단기 성과보다 프로젝트의 지속 가능한 성장에 집중합니다. 캠페인이 끝나도 관계는 이어집니다.</p>
+          </div>
         </div>
-        <div class="form-group">
-          <label data-ko="연락처 (텔레그램 또는 이메일)" data-en="Contact (Telegram or Email)">연락처 (텔레그램 또는 이메일)</label>
-          <input type="text" name="contact" data-placeholder-ko="@telegram_id 또는 이메일 주소" data-placeholder-en="@telegram_id or email address" placeholder="@telegram_id 또는 이메일 주소">
+        <div class="why-card">
+          <span class="why-ico">⚡</span>
+          <div>
+            <h4 data-ko="창구 하나로 모든 채널을 커버합니다" data-en="One Contact, Every Channel">창구 하나로 모든 채널을 커버합니다</h4>
+            <p data-ko="텔레그램, X, 인스타그램, 페이스북, 디스코드. 채널마다 담당자를 따로 둘 필요가 없습니다." data-en="Telegram, X, Instagram, Facebook, Discord — no need to manage separate contacts per channel.">텔레그램, X, 인스타그램, 페이스북, 디스코드. 채널마다 담당자를 따로 둘 필요가 없습니다.</p>
+          </div>
         </div>
-        <div class="form-group">
-          <label data-ko="가장 필요한 서비스는 무엇인가요?" data-en="What do you need most?">가장 필요한 서비스는 무엇인가요?</label>
-          <select name="service">
-            <option data-ko="선택해주세요" data-en="Please select">선택해주세요</option>
-            <option data-ko="커뮤니티 콘텐츠 운영" data-en="Community Content Management">커뮤니티 콘텐츠 운영</option>
-            <option data-ko="소셜 채널 운영 (X, 인스타, 페이스북, 디스코드)" data-en="Social Channel Management (X, Instagram, Facebook, Discord)">소셜 채널 운영 (X, 인스타, 페이스북, 디스코드)</option>
-            <option data-ko="KOL 마케팅 (한국·일본·글로벌)" data-en="KOL Marketing (Korea / Japan / Global)">KOL 마케팅 (한국·일본·글로벌)</option>
-            <option data-ko="거래소 상장 절차 지원" data-en="Exchange Listing Support">거래소 상장 절차 지원</option>
-            <option data-ko="기획 및 콘텐츠 제작" data-en="Strategy & Content Production">기획 및 콘텐츠 제작</option>
-            <option data-ko="통합 패키지 (올인원)" data-en="Full Package (All-in-One)">통합 패키지 (올인원)</option>
-            <option data-ko="일단 상담 후 결정하고 싶습니다" data-en="I'd like to consult first">일단 상담 후 결정하고 싶습니다</option>
-          </select>
+        <div class="why-card">
+          <span class="why-ico">💰</span>
+          <div>
+            <h4 data-ko="재단 예산을 아끼는 게 우리 목표입니다" data-en="Saving Your Budget Is Our Goal">재단 예산을 아끼는 게 우리 목표입니다</h4>
+            <p data-ko="국내 동급 서비스 대비 가장 낮은 비용 구조를 유지합니다. 재단이 아낀 예산은 개발과 사업에 씁니다." data-en="We maintain the most competitive pricing for equivalent services. Save your budget for development and growth.">국내 동급 서비스 대비 가장 낮은 비용 구조를 유지합니다. 재단이 아낀 예산은 개발과 사업에 씁니다.</p>
+          </div>
         </div>
-        <div class="form-group">
-          <label data-ko="지금 상황을 자유롭게 적어주세요" data-en="Tell us about your current situation">지금 상황을 자유롭게 적어주세요</label>
-          <textarea name="message" data-placeholder-ko="어디서 막혔는지, 어디까지 왔는지, 무엇이 필요한지. 뭐든 좋습니다." data-placeholder-en="Where are you stuck? What have you tried? What do you need?" placeholder="어디서 막혔는지, 어디까지 왔는지, 무엇이 필요한지. 뭐든 좋습니다."></textarea>
-        </div>
-        <button type="submit" class="form-submit" data-ko="상담 신청하기" data-en="Submit">상담 신청하기</button>
-      </form>
+      </div>
     </div>
   </div>
 </section>
 
-<div class="disclaimer">
-  <p data-ko="ChainOn이 제공하는 서비스는 블록체인 프로젝트의 마케팅 및 커뮤니티 운영 지원을 목적으로 합니다. 거래소 상장 지원 서비스는 절차 안내 및 커뮤니케이션 지원에 한하며, 상장 여부는 각 거래소의 독립적인 심사 기준과 결정에 따릅니다. 본 사이트의 어떠한 내용도 투자 권유 또는 수익을 보장하는 것으로 해석되어서는 안 됩니다." data-en="ChainOn's services are intended to support blockchain project marketing and community operations. Exchange listing support is limited to process guidance and communication facilitation. Listing decisions are made solely at each exchange's independent discretion. Nothing on this site constitutes investment advice or a guarantee of financial returns.">ChainOn이 제공하는 서비스는 블록체인 프로젝트의 마케팅 및 커뮤니티 운영 지원을 목적으로 합니다. 거래소 상장 지원 서비스는 절차 안내 및 커뮤니케이션 지원에 한하며, 상장 여부는 각 거래소의 독립적인 심사 기준과 결정에 따릅니다. 본 사이트의 어떠한 내용도 투자 권유 또는 수익을 보장하는 것으로 해석되어서는 안 됩니다.</p>
-</div>
+<!-- PAIN POINTS -->
+<section class="sec" id="pain">
+  <div class="wrap">
+    <div class="c">
+      <div class="eyebrow"><span class="eyebrow-bar"></span><span class="eyebrow-txt">이런 상황이라면</span></div>
+      <h2 class="sec-h" data-ko="읽다가 멈추게 되는<br>문장이 있을 겁니다" data-en="You'll Stop Reading<br>at One of These">읽다가 멈추게 되는<br>문장이 있을 겁니다</h2>
+      <p class="sec-d" data-ko="아래 중 하나라도 해당되면 그냥 연락 주세요." data-en="If any of these sound familiar, just reach out.">아래 중 하나라도 해당되면 그냥 연락 주세요.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain">
+        <div class="pain-mark">Pain 01</div>
+        <h4 data-ko="어디서 시작해야 할지 모릅니다" data-en="Don't Know Where to Start">어디서 시작해야 할지 모릅니다</h4>
+        <p data-ko="마케팅이 중요하다는 건 아는데, 누굴 믿어야 할지, 어디서부터 손을 대야 할지 감이 없습니다." data-en="You know marketing matters, but you're not sure who to trust or where to begin.">마케팅이 중요하다는 건 아는데, 누굴 믿어야 할지, 어디서부터 손을 대야 할지 감이 없습니다.</p>
+      </div>
+      <div class="pain">
+        <div class="pain-mark">Pain 02</div>
+        <h4 data-ko="개발팀은 있는데 마케팅이 없습니다" data-en="Dev Team Exists, Marketing Doesn't">개발팀은 있는데 마케팅이 없습니다</h4>
+        <p data-ko="채널은 만들었는데 운영할 사람이 없고, 콘텐츠도 없고, 반응도 없습니다." data-en="The channels exist, but there's no one to run them, no content, no engagement.">채널은 만들었는데 운영할 사람이 없고, 콘텐츠도 없고, 반응도 없습니다.</p>
+      </div>
+      <div class="pain">
+        <div class="pain-mark">Pain 03</div>
+        <h4 data-ko="이전 에이전시에서 결과가 없었습니다" data-en="Previous Agency Delivered Nothing">이전 에이전시에서 결과가 없었습니다</h4>
+        <p data-ko="비용은 썼는데 측정 가능한 결과물이 없었습니다. 이번엔 숫자로 확인하고 싶습니다." data-en="You paid, but got no measurable results. This time, you want data to back it up.">비용은 썼는데 측정 가능한 결과물이 없었습니다. 이번엔 숫자로 확인하고 싶습니다.</p>
+      </div>
+      <div class="pain">
+        <div class="pain-mark">Pain 04</div>
+        <h4 data-ko="채널마다 메시지가 제각각입니다" data-en="Inconsistent Messaging Across Channels">채널마다 메시지가 제각각입니다</h4>
+        <p data-ko="팀마다 톤이 다르고 누가 책임자인지 불명확합니다. 재단 담당자만 중간에서 바쁩니다." data-en="Different tones, unclear ownership. The foundation is stuck coordinating everything.">팀마다 톤이 다르고 누가 책임자인지 불명확합니다. 재단 담당자만 중간에서 바쁩니다.</p>
+      </div>
+      <div class="pain">
+        <div class="pain-mark">Pain 05</div>
+        <h4 data-ko="거래소 상장 준비를 모르겠습니다" data-en="Don't Know How to Prepare for Listing">거래소 상장 준비를 모르겠습니다</h4>
+        <p data-ko="어떤 거래소가 현실적인지, 무엇을 준비해야 하는지 로드맵이 없습니다." data-en="You're unsure which exchanges are realistic targets and what preparation is actually required.">어떤 거래소가 현실적인지, 무엇을 준비해야 하는지 로드맵이 없습니다.</p>
+      </div>
+      <div class="pain">
+        <div class="pain-mark">Pain 06</div>
+        <h4 data-ko="글로벌 파트너가 필요합니다" data-en="Need a Global Marketing Partner">글로벌 파트너가 필요합니다</h4>
+        <p data-ko="한국 시장만으로는 한계가 있습니다. 일본, 동남아, 글로벌 커뮤니티까지 같이 볼 팀이 필요합니다." data-en="Korea alone isn't enough. You need a team that can cover Japan, Southeast Asia, and global communities.">한국 시장만으로는 한계가 있습니다. 일본, 동남아, 글로벌 커뮤니티까지 같이 볼 팀이 필요합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- EXCHANGE NETWORK -->
+<section class="sec sec-alt sec-border" id="exchanges">
+  <div class="wrap">
+    <div class="eyebrow"><span class="eyebrow-bar"></span><span class="eyebrow-txt">Exchange Network</span></div>
+    <h2 class="sec-h" data-ko="어느 거래소를 목표로<br>하고 있나요?" data-en="Which Exchange Is<br>Your Target?">어느 거래소를 목표로<br>하고 있나요?</h2>
+    <p class="sec-d" data-ko="7년간 50건 이상의 글로벌 거래소 상장 레퍼런스. 프로젝트 현재 상태에 맞는 현실적인 로드맵을 함께 설계합니다." data-en="50+ exchange listings over 7 years. We design realistic roadmaps based on your project's current stage.">7년간 50건 이상의 글로벌 거래소 상장 레퍼런스. 프로젝트 현재 상태에 맞는 현실적인 로드맵을 함께 설계합니다.</p>
+    <div class="exch-wrap">
+      <div class="exch-note" data-ko="※ ChainOn은 글로벌 거래소 상장 절차를 지원하며, 상장 여부는 각 거래소의 심사 기준과 고유 결정에 따릅니다." data-en="※ ChainOn supports the exchange listing process. Final listing decisions are made solely by each exchange based on their own review criteria.">※ ChainOn은 글로벌 거래소 상장 절차를 지원하며, 상장 여부는 각 거래소의 심사 기준과 고유 결정에 따릅니다.</div>
+      <div class="exch-grid">
+        <div class="exch-pill">Binance Alpha</div><div class="exch-pill">KuCoin</div><div class="exch-pill">Bybit</div><div class="exch-pill">OKX</div><div class="exch-pill">Gate.io</div><div class="exch-pill">Bitget</div><div class="exch-pill">MEXC</div><div class="exch-pill">HTX</div><div class="exch-pill">BingX</div><div class="exch-pill">BitMart</div><div class="exch-pill">XT.com</div><div class="exch-pill">CoinW</div><div class="exch-pill">Pionex</div><div class="exch-pill">LBank</div><div class="exch-pill">Probit</div><div class="exch-pill">DigiFinex</div><div class="exch-pill">WhiteBIT</div><div class="exch-pill">CoinStore</div><div class="exch-pill">Tapbit</div><div class="exch-pill">Toobit</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="c">
+      <div class="eyebrow"><span class="eyebrow-bar"></span><span class="eyebrow-txt">Process</span></div>
+      <h2 class="sec-h" data-ko="복잡하지 않습니다.<br>다섯 단계면 됩니다." data-en="It's Simple.<br>Five Steps.">복잡하지 않습니다.<br>다섯 단계면 됩니다.</h2>
+    </div>
+    <div class="process-wrap">
+      <div class="proc"><div class="proc-num">01</div><h4 data-ko="무료 상담" data-en="Free Consultation">무료 상담</h4><p data-ko="지금 어디쯤 있는지 얘기해주세요" data-en="Tell us where you are right now">지금 어디쯤 있는지 얘기해주세요</p></div>
+      <div class="proc"><div class="proc-num">02</div><h4 data-ko="전략 설계" data-en="Strategy Design">전략 설계</h4><p data-ko="프로젝트 맞춤 로드맵을 제안합니다" data-en="We propose a tailored roadmap">프로젝트 맞춤 로드맵을 제안합니다</p></div>
+      <div class="proc"><div class="proc-num">03</div><h4 data-ko="계약 및 킥오프" data-en="Contract & Kickoff">계약 및 킥오프</h4><p data-ko="범위 확정 후 팀이 바로 붙습니다" data-en="Scope confirmed, team deployed">범위 확정 후 팀이 바로 붙습니다</p></div>
+      <div class="proc"><div class="proc-num">04</div><h4 data-ko="운영 시작" data-en="Operations Begin">운영 시작</h4><p data-ko="채널 운영, KOL, 상장 절차 병행" data-en="Channels, KOL, listing in parallel">채널 운영, KOL, 상장 절차 병행</p></div>
+      <div class="proc"><div class="proc-num">05</div><h4 data-ko="월간 리포트" data-en="Monthly Report">월간 리포트</h4><p data-ko="숫자 공유 후 다음 달 방향 조정" data-en="Review numbers, adjust direction">숫자 공유 후 다음 달 방향 조정</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-alt sec-border" id="faq">
+  <div class="wrap">
+    <div class="c">
+      <div class="eyebrow"><span class="eyebrow-bar"></span><span class="eyebrow-txt">FAQ</span></div>
+      <h2 class="sec-h" data-ko="자주 받는 질문들" data-en="Frequently Asked Questions">자주 받는 질문들</h2>
+    </div>
+    <div class="faq-grid">
+      <div>
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)" data-ko="블록체인 마케팅이 처음인데 의뢰할 수 있나요?" data-en="Can I work with you if this is my first time with blockchain marketing?">블록체인 마케팅이 처음인데 의뢰할 수 있나요? <span class="faq-ico">+</span></button><div class="faq-body" data-ko="오히려 초기에 함께 시작하는 편이 낫습니다. 방향 설정부터 함께 설계할 수 있어 효율이 높습니다." data-en="Starting from the beginning is often better. We can design the direction together from the ground up.">오히려 초기에 함께 시작하는 편이 낫습니다. 방향 설정부터 함께 설계할 수 있어 효율이 높습니다.</div></div>
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)" data-ko="상담 비용이 있나요?" data-en="Is there a consultation fee?">상담 비용이 있나요? <span class="faq-ico">+</span></button><div class="faq-body" data-ko="없습니다. 어떤 경우에도 상담은 무료입니다." data-en="None. Consultations are always free, no exceptions.">없습니다. 어떤 경우에도 상담은 무료입니다.</div></div>
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)" data-ko="한국 프로젝트만 되나요?" data-en="Do you only work with Korean projects?">한국 프로젝트만 되나요? <span class="faq-ico">+</span></button><div class="faq-body" data-ko="아닙니다. 한국, 일본, 글로벌 시장을 모두 커버합니다." data-en="Not at all. We cover Korea, Japan, and global markets.">아닙니다. 한국, 일본, 글로벌 시장을 모두 커버합니다.</div></div>
+      </div>
+      <div>
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)" data-ko="거래소 상장을 보장해주나요?" data-en="Do you guarantee exchange listings?">거래소 상장을 보장해주나요? <span class="faq-ico">+</span></button><div class="faq-body" data-ko="상장 여부는 각 거래소의 자체 심사와 결정에 따르기 때문에 어떤 회사도 보장할 수 없습니다. ChainOn은 성공 확률을 최대한 높이는 방향으로 지원합니다." data-en="No company can guarantee listings — it depends on each exchange's independent review. ChainOn works to maximize your chances of success.">상장 여부는 각 거래소의 자체 심사와 결정에 따르기 때문에 어떤 회사도 보장할 수 없습니다. ChainOn은 성공 확률을 최대한 높이는 방향으로 지원합니다.</div></div>
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)" data-ko="진행 중에 어떻게 소통하나요?" data-en="How do we communicate during the project?">진행 중에 어떻게 소통하나요? <span class="faq-ico">+</span></button><div class="faq-body" data-ko="전담 채널 하나로 소통합니다. 여러 팀에 각각 연락할 필요가 없습니다." data-en="One dedicated channel. You never need to contact multiple teams separately.">전담 채널 하나로 소통합니다. 여러 팀에 각각 연락할 필요가 없습니다.</div></div>
+        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)" data-ko="최소 계약 기간이 있나요?" data-en="Is there a minimum contract period?">최소 계약 기간이 있나요? <span class="faq-ico">+</span></button><div class="faq-body" data-ko="프로젝트 상황에 따라 유연하게 협의합니다." data-en="We negotiate flexibly based on your project's situation.">프로젝트 상황에 따라 유연하게 협의합니다.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="contact-wrap">
+      <div class="contact-text">
+        <div class="eyebrow"><span class="eyebrow-bar"></span><span class="eyebrow-txt">Contact</span></div>
+        <h2 class="sec-h" data-ko="지금 어디쯤<br>있는지 알려주세요" data-en="Tell Us Where<br>You Are Right Now">지금 어디쯤<br>있는지 알려주세요</h2>
+        <p class="sec-d" data-ko="완벽한 계획이 없어도 됩니다. 막힌 지점이 어딘지만 말씀해 주시면 ChainOn이 거기서부터 같이 봅니다. 상담은 무료입니다." data-en="No perfect plan needed. Just tell us where you're stuck, and ChainOn will start from there. Consultations are free.">완벽한 계획이 없어도 됩니다. 막힌 지점이 어딘지만 말씀해 주시면 ChainOn이 거기서부터 같이 봅니다. 상담은 무료입니다.</p>
+        <div class="contact-links">
+          <a href="https://t.me/ChainOn7" target="_blank" class="contact-link">
+            <span class="cl-ico">✈️</span>
+            <div class="cl-text"><strong data-ko="텔레그램으로 문의" data-en="Contact via Telegram">텔레그램으로 문의</strong><span data-ko="가장 빠르게 응답받을 수 있습니다" data-en="Fastest response time">가장 빠르게 응답받을 수 있습니다</span></div>
+          </a>
+          <a href="mailto:contact@chainon.kr" class="contact-link">
+            <span class="cl-ico">✉️</span>
+            <div class="cl-text"><strong data-ko="이메일 문의" data-en="Email Us">이메일 문의</strong><span>contact@chainon.kr</span></div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xykqnzyo" method="POST" id="contactForm" onsubmit="return validateContactForm()">
+          <!-- honeypot: 사람 눈엔 안 보이지만 봇은 채워서 제출함 -> 채워져 있으면 차단 -->
+          <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+          <div class="form-group">
+            <label data-ko="프로젝트명 / 담당자명" data-en="Project / Contact Name">프로젝트명 / 담당자명</label>
+            <input type="text" name="name" id="f_name" required minlength="2">
+          </div>
+          <div class="form-group">
+            <label data-ko="연락처 (텔레그램 또는 이메일)" data-en="Contact (Telegram or Email)">연락처 (텔레그램 또는 이메일)</label>
+            <input type="text" name="contact" id="f_contact" required minlength="4">
+          </div>
+          <div class="form-group">
+            <label data-ko="가장 필요한 서비스" data-en="Service of Interest">가장 필요한 서비스</label>
+            <select name="service">
+              <option data-ko="선택해주세요" data-en="Please select">선택해주세요</option>
+              <option data-ko="커뮤니티 콘텐츠 운영" data-en="Community Content Management">커뮤니티 콘텐츠 운영</option>
+              <option data-ko="소셜 채널 운영" data-en="Social Media Management">소셜 채널 운영</option>
+              <option data-ko="KOL 마케팅" data-en="KOL Marketing">KOL 마케팅</option>
+              <option data-ko="거래소 상장 지원" data-en="Exchange Listing Support">거래소 상장 지원</option>
+              <option data-ko="기획 및 콘텐츠 제작" data-en="Strategy & Content">기획 및 콘텐츠 제작</option>
+              <option data-ko="통합 패키지" data-en="Full Package">통합 패키지</option>
+              <option data-ko="상담 후 결정" data-en="Decide After Consultation">상담 후 결정</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-ko="현재 상황을 자유롭게 적어주세요" data-en="Describe your current situation">현재 상황을 자유롭게 적어주세요</label>
+            <textarea name="message" id="f_message" required minlength="5"></textarea>
+          </div>
+          <button type="submit" class="form-submit" data-ko="상담 신청하기" data-en="Submit Inquiry">상담 신청하기</button>
+          <p class="form-note" data-ko="ChainOn이 제공하는 서비스는 블록체인 프로젝트의 마케팅 지원을 목적으로 합니다. 거래소 상장 지원은 절차 안내 및 커뮤니케이션 지원에 한하며, 상장 여부는 각 거래소의 독립적 심사 기준에 따릅니다. 본 사이트의 어떠한 내용도 투자 권유 또는 수익을 보장하는 것으로 해석되어서는 안 됩니다." data-en="ChainOn's services are intended for blockchain project marketing support. Exchange listing support is limited to process guidance and communication. Listing decisions are made solely by each exchange. Nothing on this site constitutes investment advice or a guarantee of returns.">ChainOn이 제공하는 서비스는 블록체인 프로젝트의 마케팅 지원을 목적으로 합니다. 거래소 상장 지원은 절차 안내 및 커뮤니케이션 지원에 한하며, 상장 여부는 각 거래소의 독립적 심사 기준에 따릅니다.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <a href="#" class="logo">Chain<span>On</span></a>
-  <p>© 2026 ChainOn. All rights reserved.</p>
-  <p>Blockchain Growth Partner</p>
+  <div class="foot-wrap">
+    <div class="foot-left">
+      <a href="#" class="logo">Chain<span>On</span></a>
+      <div class="foot-tagline">Blockchain Growth Partner</div>
+    </div>
+    <div class="foot-info">
+      상호: 체인온(ChainOn) &nbsp;|&nbsp; 대표자: 김광욱 &nbsp;|&nbsp; 사업자등록번호: 148-65-00752<br>
+      서울특별시 강남구 논현로10길 30 &nbsp;|&nbsp; <a href="mailto:contact@chainon.kr">contact@chainon.kr</a><br>
+      <span style="opacity:.5;font-size:.65rem">© 2026 ChainOn. All rights reserved.</span>
+    </div>
+  </div>
 </footer>
 
-<div style="background:#060F1E; padding:1.5rem 5vw; border-top:1px solid rgba(255,255,255,0.05);">
-  <p style="font-size:0.72rem; color:rgba(255,255,255,0.2); line-height:1.9; text-align:center;">
-    상호: 체인온(ChainOn) &nbsp;|&nbsp; 대표자: 김광욱 &nbsp;|&nbsp; 사업자등록번호: 148-65-00752<br>
-    서울특별시 강남구 논현로10길 30 &nbsp;|&nbsp; contact@chainon.kr
-  </p>
-</div>
-
 <script>
-let lang = 'ko';
-
-const h1 = {
-  ko: '재단의 성장에<br><span class="accent">ChainOn이 함께합니다</span>',
-  en: 'Your Project Deserves<br><span class="accent">To Be Known</span>'
-};
-const titles = {
-  'why-title':   { ko: '재단의 성장을<br>함께 만들어갑니다', en: 'Growing Together.<br>As One Team.' },
-  'svc-title':   { ko: '아홉 개 서비스.<br>창구는 하나입니다.',       en: 'Nine Services.<br>One Point of Contact.' },
-  'pain-title':  { ko: '읽다가 멈추게 되는<br>문장이 있을 겁니다',    en: 'If any of these<br>sound like your project' },
-  'ex-title':    { ko: '어느 거래소를<br>목표로 하고 있나요?',        en: 'Which exchange<br>are you targeting?' },
-  'cta-h2':      { ko: '비용이 얼마나 나올까요?',                    en: 'How much does it cost?' },
-  'proc-title':  { ko: '복잡하지 않습니다.<br>다섯 단계면 됩니다.',   en: 'Simple.<br>Five steps to get started.' },
-  'faq-title':   { ko: '자주 받는 질문들',                           en: 'Frequently Asked Questions' },
-  'contact-title': { ko: '지금 어디쯤<br>있는지 알려주세요',         en: 'Tell us where<br>your project stands' }
-};
-
-function setLang(l) {
-  lang = l;
-  document.documentElement.lang = l;
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-  document.querySelector(`.lang-btn[onclick="setLang('${l}')"]`).classList.add('active');
-
-  // h1
-  document.getElementById('hero-h1').innerHTML = h1[l];
-
-  // section titles with innerHTML
-  Object.keys(titles).forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.innerHTML = titles[id][l];
-  });
-
-  // all [data-ko][data-en] text nodes
-  document.querySelectorAll('[data-ko][data-en]').forEach(el => {
-    const val = el.getAttribute('data-' + l);
-    if (val === null) return;
-    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') return;
-    if (el.id && titles[el.id]) return; // already handled
-    if (el.id === 'hero-h1') return;
-    // Only update text-only elements or spans
-    if (el.children.length === 0 || el.tagName === 'SPAN') {
-      el.innerHTML = val;
-    }
-  });
-
-  // placeholders
-  document.querySelectorAll('[data-placeholder-ko]').forEach(el => {
-    el.placeholder = el.getAttribute('data-placeholder-' + l) || '';
-  });
-
-  // select options
-  document.querySelectorAll('select option[data-ko]').forEach(opt => {
-    opt.textContent = opt.getAttribute('data-' + l);
-  });
-
-  // form submit button
-  document.querySelectorAll('.form-submit[data-ko]').forEach(btn => {
-    btn.textContent = btn.getAttribute('data-' + l);
-  });
-
-  document.body.style.fontFamily = l === 'en'
-    ? "'Plus Jakarta Sans', sans-serif"
-    : "'Noto Sans KR','Plus Jakarta Sans',sans-serif";
+// Nav scroll
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40)
+})
+// Contact form validation: 빈 값/스팸봇 직접 전송 차단 (1차 클라이언트 필터)
+function validateContactForm(){
+  const name=document.getElementById('f_name').value.trim()
+  const contact=document.getElementById('f_contact').value.trim()
+  const message=document.getElementById('f_message').value.trim()
+  const honeypot=document.querySelector('input[name="_gotcha"]').value
+  if(honeypot){return false} // 봇이 채운 흔적 있으면 전송 차단
+  if(name.length<2||contact.length<4||message.length<5){
+    alert(document.documentElement.lang==='ko'?'프로젝트명, 연락처, 상황 설명을 모두 입력해 주세요.':'Please fill in your name, contact, and a short message.')
+    return false
+  }
+  return true
 }
-
-document.querySelectorAll('.faq-q').forEach(q => {
-  q.addEventListener('click', () => {
-    const item = q.parentElement;
-    const open = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!open) item.classList.add('open');
-  });
-});
-
-
-
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; } });
-}, { threshold: 0.08 });
-
-document.querySelectorAll('.why-card,.service-item,.process-step,.faq-item,.pain-card').forEach(el => {
-  el.style.opacity='0'; el.style.transform='translateY(16px)';
-  el.style.transition='opacity .45s ease,transform .45s ease';
-  io.observe(el);
-});
+// FAQ
+function toggleFaq(btn){
+  const item=btn.parentElement
+  const open=item.classList.contains('open')
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'))
+  if(!open)item.classList.add('open')
+}
+// Lang toggle
+let currentLang='ko'
+function setLang(lang){
+  currentLang=lang
+  document.getElementById('btn-ko').classList.toggle('active',lang==='ko')
+  document.getElementById('btn-en').classList.toggle('active',lang==='en')
+  document.querySelectorAll('[data-ko],[data-en]').forEach(el=>{
+    const txt=el.getAttribute('data-'+lang)
+    if(!txt)return
+    if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){el.placeholder=txt;return}
+    if(el.tagName==='BUTTON'||el.tagName==='OPTION'){el.textContent=txt;return}
+    el.innerHTML=txt
+  })
+}
+// Scroll reveal
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}
+  })
+},{threshold:.06})
+document.querySelectorAll('.svc,.hstat,.why-card,.pain,.proc,.exch-pill,.tst').forEach(el=>{
+  el.style.cssText+=';opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease'
+  obs.observe(el)
+})
 </script>
 </body>
 </html>
